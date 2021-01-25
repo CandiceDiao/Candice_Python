@@ -1,0 +1,63 @@
+# -*- coding: UTF-8 -*-
+
+log:
+    file_name: test.log      # 输出日志文件名
+    backup: 5                # 备份名
+    console_level: WARNING  # 控制台输出等级
+    file_level: DEBUG       # 文件输出等级
+    pattern: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # 打印输出格式
+
+
+#接口请求头部公共参数
+#header:
+#  {"Content-Type": "application/json;charset=UTF-8"}
+
+##文件上传请求头部
+#header_upload:
+#    {"Conteny-Type": "multipart/form-data"}
+
+
+#mock地址
+#url: http://10.10.203.21:8088/app/mock/19/post/
+
+
+## 开发环境接口及数据库地址
+#url: http://10.0.58.21/
+#
+#header:
+#  {"Content-Type": "application/json;charset=UTF-8"}
+#  Authorization: ""
+#  userId: ""
+#
+##header_upload:
+##    {"Conteny-Type": "multipart/form-data"}
+
+
+# 测试环境接口及数据库地址
+url: http://10.0.2.61/
+
+header:
+  Content-Type: "application/json;charset=UTF-8"
+  Authorization: ""
+  userId: ""
+
+#header_upload:
+#    {"Conteny-Type": "multipart/form-data"}
+
+
+# mysql地址
+mysqlhost: 10.0.58.21
+
+mysqluser: root
+
+mysqlpw: '123456'
+
+mysqldb: smart_code_dev
+
+# icd和drg参数配置
+
+drg_version: "CN-2019"
+
+icd9_version: "20"
+
+icd10_version: "20"

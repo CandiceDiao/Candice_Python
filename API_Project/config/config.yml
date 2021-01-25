@@ -1,0 +1,73 @@
+# -*- coding: UTF-8 -*-
+
+
+log:
+    file_name: test.log      # 输出日志文件名
+    backup: 5                # 备份名
+    console_level: WARNING  # 控制台输出等级
+    file_level: DEBUG       # 文件输出等级
+    pattern: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # 打印输出格式
+
+
+
+# 开发环境接口及数据库地址
+url: http://10.10.203.25:9090/
+
+oraclehost: 10.10.203.21
+
+oracleport: 1521
+
+oraclesid: orcl11g
+
+oracleuser: DRGS_DEVE
+
+oraclepassword: drgs
+
+header:
+  {"Content-Type": "application/json;charset=UTF-8","Referer":"http://10.10.203.25:9090/service/ma/login"}
+
+header_upload:
+    {"Conteny-Type": "multipart/form-data","Referer":"http://10.10.203.25:9090/service/ma/login"}
+
+
+# mysql地址
+mysqlhost: 10.0.62.43
+
+mysqluser: root
+
+mysqlpw: root
+
+mysqldb: mdm_std_output
+
+# 测试环境接口及数据库地址
+#url: http://10.10.203.26:9090/
+#
+#oraclehost: 10.10.203.22
+#
+#oracleport: 1521
+#
+#oraclesid: orcl11g
+#
+#oracleuser: DRG_YIBAO2019
+#
+#oraclepassword: oracle
+#
+#header:
+#  {"Content-Type": "application/json;charset=UTF-8","Referer":"http://10.10.203.26:9090/service/ma/login"}
+#
+#header_upload:
+#    {"Conteny-Type": "multipart/form-data","Referer":"http://10.10.203.26:9090/service/ma/login"}
+
+
+## 性能测试环境接口及数据库地址
+#url: http://192.168.250.121:9090/
+#
+#oraclehost: 10.10.202.135
+#
+#oracleport: 1521
+#
+#oraclesid: orcl
+#
+#oracleuser: yb20190627a
+#
+#oraclepassword: drgs
