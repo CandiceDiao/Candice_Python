@@ -28,6 +28,15 @@ def bubble_sort(alist):
 #             if alist[i] > alist[i+1]:
 #                 alist[i], alist[i+1] = alist[i+1], alist[i]
 
+def bubble_sort(alist):
+    n = len(alist)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if alist[j] > alist[j + 1]:
+               alist[j], alist[j + 1] = alist[j + 1], alist[j]
+    return alist
+
+
 if __name__=='__main__':
     li=[24,23,93,17,77,31,44,55,20]
     print(li)

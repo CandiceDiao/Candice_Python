@@ -14,6 +14,7 @@ def quick_sort(alist,first,last):
     low = first
     high = last
 
+    #控制游标high往左移动条件
     while low < high:
         # high左移
         # 把与mid_value相等的元素放到一边
@@ -26,7 +27,7 @@ def quick_sort(alist,first,last):
         alist[low] = alist[high]
         # low += 1
         # low右移
-        while low < high and alist[low] > mid_value:
+        while low < high and alist[low] < mid_value:
             low += 1
         alist[high] = alist[low]
         # high -= 1

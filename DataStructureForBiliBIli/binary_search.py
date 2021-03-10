@@ -1,19 +1,24 @@
 """
-二分查找：有序序列
+二分查找：操作对象必须为有序的，顺序表
+时间复杂度 最优 O(1)
+           最坏 O(logn)
 """
 
-#递归版本：每次传入一个新的列表
+#递归版本：每次传入一个新的！！列表
 def binary_search(alist,item):
     n=len(alist)
     #递归调用退出条件
     if n>0:
         # 找到中间位置
+        # 不是在原有的列表上进行操作，每次都是新的列表。所以起点是0
         mid = n // 2
         if alist[mid] == item:
             return True
         elif item < alist[mid]:
+            # 递归版本：每次传入一个新的！！列表
             return binary_search(alist[:mid], item)
         else:
+            # 递归版本：每次传入一个新的！！列表
             return binary_search(alist[mid + 1:], item)
     return False
 

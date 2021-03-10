@@ -15,7 +15,9 @@ class Solution(object):
         dummy = ListNode(0)
         dummy.next = head
         while head is not None and head.next is not None:
+            #dummy的next节点
             denxt = dummy.next
+            #head的next节点
             hnext = head.next
 
             #dummy-2
